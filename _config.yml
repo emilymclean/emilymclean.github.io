@@ -1,1 +1,39 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: Emily McLean
+email: emily@mclean.lgbt
+author: Emily McLean
+url: https://emilym.cl
+
+homepage_image: cutout.jpg
+
+keywords: Emily McLean, software, android, developer, engineer
+description: The website of Emily McLean
+locale: en_AU
+
+theme:
+  primary_color: fac1be
+
+social:
+  mastodon: https://blahaj.zone/@emilyistrans
+  twitter: emilytmclean
+  facebook: emily.trans.mclean
+
+
+exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, starving-artist-jekyll-theme-*.gem]
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: atom.xml
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+include: ['_pages']
+
