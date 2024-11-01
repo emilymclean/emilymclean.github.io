@@ -14,9 +14,7 @@ theme:
   primary_color: fac1be
 
 social:
-  mastodon: https://blahaj.zone/@emilyistrans
-  twitter: emilytmclean
-  facebook: emily.trans.mclean
+  mastodon: https://blahaj.zone/@emily
 
 
 exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, starving-artist-jekyll-theme-*.gem]
