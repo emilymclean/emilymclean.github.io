@@ -30,7 +30,7 @@ feed:
   path: atom.xml
 
 sass:
-  style: :compressed
+  style: compressed
   sass_dir: _sass
 
 include: ['_pages']
