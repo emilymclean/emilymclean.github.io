@@ -11,3 +11,5 @@ While Sinatra doesn’t include ticketing or full routing features, we focus on 
 Sinatra is open source! You can find and contribute to our codebase at [Github](https://github.com/emilymclean/sinatra).
 
 See our [privacy policy](/sinatra/privacy) and [terms and conditions](/sinatra/terms).
+
+Sinatra is not affiliated with Transport Canberra, NEC, or MyWay+.
