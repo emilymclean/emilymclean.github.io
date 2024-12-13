@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-AU" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title and page.title != "" %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if site.author %}
+      <meta name="author" content="{{ site.author }}">
+    {% endif %}
+    {% capture description %}{% if page.description %}{{ page.description }}{% elsif site.description %}{{ site.description }}{%else%}{{ content | raw_content }}{% endif %}{% endcapture %}
+    <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords }}">
+    {%else%}
+      <meta name="keywords" content="{{ site.keywords }}">
+    {% endif %}
+    {% if site.social.mastodon %}
+      <link rel="me" href="{{ site.social.mastodon }}">
+    {% endif %}
+
+    <link href="/favicon.ico" rel="icon">
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="/assets/img/in_app_icon.png" alt="Logo" />
+
+        <h1><a href="/sinatra">Sinatra</a></h1>
+
+        <p>Sinatra is a companion app for the Canberra MyWay+ network made by locals for locals.</p>
+
+        <p class="view"><a href="https://github.com/emilymclean/sinatra">View the Project on GitHub</a></p>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <p>Made with 🩷 in Canberra, Australia.</p>
+        <p><small>Copyright &copy; 2024 Emily McLean &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

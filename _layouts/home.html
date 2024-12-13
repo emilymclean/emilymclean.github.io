@@ -1,11 +1,17 @@
 ---
-layout: base
+layout: compress
 ---
-<div id="home-body">
-    <div id="content">
-        {{content}}
+<!DOCTYPE html>
+<html>
+  {% include home_head.html %}
+  <body>
+    <div id="home-body">
+      <div id="content">
+          {{content}}
+      </div>
+      {% if site.homepage_image %}
+          <div id="me" style="background-image:url({{ site.homepage_image }});"></div>
+      {% endif %}
     </div>
-    {% if site.homepage_image %}
-        <div id="me" style="background-image:url({{ site.homepage_image }});"></div>
-    {% endif %}
-</div>
+  </body>
+</html>
