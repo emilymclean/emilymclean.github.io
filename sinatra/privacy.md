@@ -13,7 +13,9 @@ The Application collects anonymized device information when you download and use
 *   Your device's Internet Protocol address (e.g. IP address)
 *   Your device's operating system, name, model, brand, and form factor.
 *   The source that was used to install the Application
+*   Your device's [Advertising ID](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
 
+This information is collected exclusively for diagnostic purposes.
 
 The Application does not transmit, store or share any location information. Precise location data is processed entirely on-device.
 
@@ -56,7 +58,7 @@ The Service Provider is concerned about safeguarding the confidentiality of your
 
 This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
 
-This privacy policy is effective as of 2024-12-13
+This privacy policy is effective as of 2024-12-30
 
 **Your Consent**
 
